@@ -13,9 +13,9 @@ document.getElementById('topUpAccount').addEventListener('click', function() {
 });
 
 document.getElementById('partnership').addEventListener('click', function() {
-    document.getElementById('response').innerText = "Hamkorlik uchun bizga murojaat qiling: ";
+    document.getElementById('response').innerText = "Hamkorlik uchun bizga murojaat qiling: @Obunachins_Support";
 });
 
 document.getElementById('help').addEventListener('click', function() {
-    document.getElementById('response').innerText = "Yordam uchun FAQ bo'limiga o'ting yoki biz bilan bog'laning.";
+    document.getElementById('response').innerText = "Yordam uchun @Obunachins_Support ";
 });
