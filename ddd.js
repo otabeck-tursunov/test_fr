@@ -1,6 +1,6 @@
 document.getElementById('checkBalance').addEventListener('click', function() {
    
-    document.getElementById('response').innerText = "Sizning hisobingiz: 10000 so'm.";
+    document.getElementById('response').innerText = "Sizning hisobingiz: 0 so'm.";
 });
 
 document.getElementById('topUpAccount').addEventListener('click', function() {
@@ -13,7 +13,7 @@ document.getElementById('topUpAccount').addEventListener('click', function() {
 });
 
 document.getElementById('partnership').addEventListener('click', function() {
-    document.getElementById('response').innerText = "Hamkorlik uchun bizga murojaat qiling: example@example.com";
+    document.getElementById('response').innerText = "Hamkorlik uchun bizga murojaat qiling: ";
 });
 
 document.getElementById('help').addEventListener('click', function() {

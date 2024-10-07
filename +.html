@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payme Integratsiya</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./nakrutka.html">
+</head>
+<body>
+    <h1>To'lov qilish</h1>
+    <button id="payButton">To'lovni amalga oshirish</button>
+
+    <script>
+        $(document).ready(function() {
+            $('#payButton').click(function() {
+               
+                $.ajax({
+                    url: 'https://payme.uz/api/payment/create', // Payme API URL
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        amount: 10000, // To'lov miqdori (so'm)
+                        currency: 'UZS' // Valyuta
+                        // Boshqa parametrlar
+                    }),
+                    success: function(response) {
+                        console.log('To\'lov muvaffaqiyatli:', response);
+                     
+                    },
+                    error: function(error) {
+                        console.error('To\'lov xatosi:', error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
