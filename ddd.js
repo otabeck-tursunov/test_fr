@@ -4,18 +4,18 @@ document.getElementById('checkBalance').addEventListener('click', function() {
 });
 
 document.getElementById('topUpAccount').addEventListener('click', function() {
-    let amount = prompt("Hisobni qancha toʻldirmoqchisiz? (so'mda)");
+    let amount = prompt("@obunachins_bot");
     if (amount) {
-        document.getElementById('response').innerText = `Sizning hisobingiz ${amount} so'mga toʻldirildi.`;
+        document.getElementById('response').innerText = `Hizmat hali ishga tushirilmadi lekin  ${amount} lekin ushu hizmatlardan @obunachins_bot orqali foydalaning`;
     } else {
-        document.getElementById('response').innerText = "Hisobni toʻldirish bekor qilindi.";
+        document.getElementById('response').innerText = "@obunachins_bot";
     }
 });
 
 document.getElementById('partnership').addEventListener('click', function() {
-    document.getElementById('response').innerText = "Hamkorlik uchun bizga murojaat qiling: @Obunachins_Support";
+    document.getElementById('response').innerText = "Hamkorlik uchun bizga murojaat qiling: @obunachins_bot";
 });
 
 document.getElementById('help').addEventListener('click', function() {
-    document.getElementById('response').innerText = "Yordam uchun @Obunachins_Support ";
+    document.getElementById('response').innerText = "Yordam uchun @obunachins_bot ";
 });
